@@ -68,4 +68,32 @@
 
 	-->
 
+	<bean class="concerttours.data.TourSummaryData">
+		<property name="id" type="java.lang.String"/>
+		<property name="tourName" type="java.lang.String"/>
+		<property name="numberOfConcerts" type="java.lang.String"/>
+	</bean>
+
+	<bean class="concerttours.data.BandData">
+		<property name="id" type="java.lang.String"/>
+		<property name="name" type="java.lang.String"/>
+		<property name="description" type="java.lang.String"/>
+		<property name="albumsSold" type="java.lang.Long"/>
+		<property name="genres" type="java.util.List&lt;String&gt;"/>
+		<property name="tours" type="java.util.List&lt;concerttours.data.TourSummaryData&gt;"/>
+	</bean>
+
+	<bean class="concerttours.data.ConcertSummaryData">
+		<property name = "id" type = "String" />
+		<property name = "date" type = "java.util.Date" />
+		<property name = "venue" type = "String" />
+		<property name = "type" type = "String" />
+	</bean>
+
+	<bean class="concerttours.data.TourData">
+		<property name = "id" type = "String" />
+		<property name = "tourName" type = "String" />
+		<property name = "description" type = "String" />
+		<property name = "concerts" type="java.util.List&lt;concerttours.data.ConcertSummaryData&gt;"/>
+	</bean>
 </beans>
