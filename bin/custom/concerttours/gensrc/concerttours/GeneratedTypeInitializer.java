@@ -66,6 +66,16 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			false
 		);
 	
+		createItemType(
+			"News",
+			"GenericItem",
+			concerttours.jalo.News.class,
+			"de.hybris.platform.persistence.concerttours_News",
+			false,
+			null,
+			false
+		);
+	
 		createRelationType(
 			"Product2RockBand",
 			null,
@@ -118,6 +128,12 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 				single_createattr_Concert_concertType();
 			
 				single_createattr_Concert_daysUntil();
+			
+				single_createattr_News_date();
+			
+				single_createattr_News_headline();
+			
+				single_createattr_News_content();
 			
 		createRelationAttributes(
 			"Product2RockBand", 
@@ -312,6 +328,57 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			
 	}
 	
+	public void single_createattr_News_date() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"News", 
+					"date",  
+					null,
+					"java.util.Date",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_News_headline() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"News", 
+					"headline",  
+					null,
+					"java.lang.String",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_News_content() throws JaloBusinessException
+	{
+		
+						Map sqlColumnDefinitions = null;
+					
+				createPropertyAttribute(
+					"News", 
+					"content",  
+					null,
+					"java.lang.String",
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
+					null,
+					sqlColumnDefinitions
+				);
+			
+	}
+	
 
 
 	/**
@@ -432,6 +499,25 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			single_setAttributeProperties_Concert_concertType();
 		
 			single_setAttributeProperties_Concert_daysUntil();
+		
+				{
+				Map customPropsMap = new HashMap();
+				
+				setItemTypeProperties(
+					"News",
+					false,
+					true,
+					true,
+					null,
+					customPropsMap
+				);
+				}
+			
+			single_setAttributeProperties_News_date();
+		
+			single_setAttributeProperties_News_headline();
+		
+			single_setAttributeProperties_News_content();
 		
 				setDefaultProperties(
 					"ConcertType",
@@ -646,6 +732,72 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 								null,
 								customPropsMap,
 								"concertDaysUntilAttributeHandler"
+							);
+						}
+					
+						public void single_setAttributeProperties_News_date() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"News", 
+								"date",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
+						public void single_setAttributeProperties_News_headline() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"News", 
+								"headline",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
+							);
+						}
+					
+						public void single_setAttributeProperties_News_content() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"News", 
+								"content",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								null
 							);
 						}
 					
