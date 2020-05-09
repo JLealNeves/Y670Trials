@@ -3,5 +3,6 @@
 /bin/*
 !/bin/custom
 /roles
-/data
+/data/*
+!/data/hsqldb
 /.idea
